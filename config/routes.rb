@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get "/all_products" => "products#get_all_products"
   get "/product1" => "products#product1"
   get "/product2" => "products#product2"
-  get "/single_route/" => "products#single_route"
+  get "/single_route/:id" => "products#single_route"
 end
