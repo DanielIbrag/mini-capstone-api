@@ -13,4 +13,9 @@ class ProductsController < ApplicationController
     product2 = Product.find(2)
     render json: product2.as_json
   end
+
+  def single_route
+    single_route = Product.find_by(id: params["id"])
+    render json: single_route
+  end
 end
