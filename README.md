@@ -22,3 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#cheet sheet 
+
+to create a new rails api
+
+rails new title-api
+
+to create a controller
+
+rails generate controller titles
+
+to create a model
+
+rails generate model Title titlelabel1:string   titlelabel2:string
+
