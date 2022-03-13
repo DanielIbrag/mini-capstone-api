@@ -1,0 +1,23 @@
+###Product Index
+GET http://localhost:3000/products
+
+###Product Create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Paco Robbanne Invictus",
+  "price": 85,
+  "image_url":"https://m.media-amazon.com/images/I/51gAbGPRncL._SL1000_.jpg",
+  "description": "Invictus is Latin for “unconquered.” The speaker in the poem proclaims his strength in the face of adversity: My head is bloody, but unbowed.... I am the master of my fate; I am the captain of my soul."
+}
+###Product Show
+GET http://localhost:3000/products/3
+
+###Product update
+PATCH http://localhost:3000/products/3
+Content-Type: application/json
+
+{
+  "name": "invictus aqua legends"
+}
