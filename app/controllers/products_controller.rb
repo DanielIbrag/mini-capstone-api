@@ -17,12 +17,12 @@ class ProductsController < ApplicationController
 
   def show
     single_route = Product.find_by(id: params["id"])
-    render json: single_route
+    render json: single_route.as_json(methods: [:is_discounted?, :tax,:total])
   end
 
   def patch
-    product_id= params["id"]
-    product=Product.find(product_id)
+    product_id = params["id"]
+    product = Product.find(product_id)
     product.name = params["name"] || product.name
     product.price = params["price"] || product.price
     product.image_url = params["image_url"] || product.image_url

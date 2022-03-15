@@ -12,7 +12,7 @@ Content-Type: application/json
   "description": "Invictus is Latin for “unconquered.” The speaker in the poem proclaims his strength in the face of adversity: My head is bloody, but unbowed.... I am the master of my fate; I am the captain of my soul."
 }
 ###Product Show
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/2
 
 ###Product update
 PATCH http://localhost:3000/products/3
