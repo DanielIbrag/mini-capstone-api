@@ -16,4 +16,10 @@ class Product < ApplicationRecord
     new_price = 0
     new_price = tax + price
   end
+
+  validates :name, uniqueness: true
+  validates :price, numbericality: greater_than%{0}
+  validates :description, length: {minimum:10}
+  validates :description, length: {maximum:500}
+
 end
