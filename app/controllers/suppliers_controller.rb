@@ -1,4 +1,6 @@
 class SuppliersController < ApplicationController
+  
+
   def index
     products = Supplier.all
     render json: products
