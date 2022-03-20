@@ -1,6 +1,4 @@
 class SuppliersController < ApplicationController
-  
-
   def index
     products = Supplier.all
     render json: products
@@ -37,5 +35,13 @@ class SuppliersController < ApplicationController
     else
       render json: { error_messages: supplier.errors.full_messages }, status: 422
     end
+  end
+
+  def destroy
+    id = params[:id]
+    supplier = Supplier.find_by(id: id)
+    supplier.destroy
+
+    render json: { message: "Supplier successfully destroyed!" }
   end
 end

@@ -36,4 +36,12 @@ class ProductsController < ApplicationController
       render json: { error_messages: product.errors.full_messages }, status: 422
     end
   end
+
+  def destroy
+    id = params[:id]
+    product = Product.find_by(id: id)
+    product.destroy
+
+    render json: { message: "Product successfully destroyed!" }
+  end
 end
