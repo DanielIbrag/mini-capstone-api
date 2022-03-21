@@ -19,8 +19,17 @@ Image.create!([{
   url: "https://m.media-amazon.com/images/I/51gAbGPRncL._SL1000_.jpg", product_id: 1,
 },
                {
+  url: "https://www.thulooj.com/image/cache/catalog/paco%20rabanne%20/3349668577583_paco_rabanne_invictus_legend_edp_100_ml_5-1000x1000.jpg", product_id: 1,
+},
+               {
   url: "https://www.sephora.com/productimages/sku/s1200716-main-zoom.jpg", product_id: 2,
 },
                {
+  url: "https://n.nordstrommedia.com/id/sr3/c35d1255-7713-481d-a64b-b6fc7e6d41f0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196", product_id: 2,
+},
+               {
   url: "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwfa6adcd7/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=300", product_id: 3,
+},
+               {
+  url: "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwa65daa72/assets/Y0785220/Y0785220_E02_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800", product_id: 3,
 }])

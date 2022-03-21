@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   post "/suppliers" => "suppliers#create"
   patch "/suppliers/:id" => "suppliers#patch"
   delete "/suppliers/:id" => "suppliers#destroy"
-  get "/images"=>"images#index"
+  get "/images" => "images#index"
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 end

@@ -44,3 +44,22 @@ DELETE http://localhost:3000/suppliers/4
 
 ### Image Index
 GET http://localhost:3000/images
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Danny",
+  "email": "danny@test.com",
+  "password": "password1",
+  "password_confirmation": "password1"
+}
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
