@@ -1,5 +1,6 @@
 ###Product Index
 GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDc5OTU5OTV9.MZo6RNdIl2JUuchAk17gnbm3CnrLv_FLBvmIzJEPh5Y
 
 ###Product Create
 POST http://localhost:3000/products
