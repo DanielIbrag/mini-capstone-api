@@ -1,8 +1,8 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgyNTc2OTV9.EXzLu3UnHicYiEP1sGHVvKYvhguolY1zoyoZbF9QvzQ
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA1ODQ1NDh9.Au9KrSodgmG3qdm1tJjHk-c_lAAAVf4VBkoIf735Qa8
 
 ###Product Index
 GET http://localhost:3000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDc5OTU5OTV9.MZo6RNdIl2JUuchAk17gnbm3CnrLv_FLBvmIzJEPh5Y
+Authorization: Authorization: Bearer {{jwt}}
 
 ###Product Create
 POST http://localhost:3000/products
@@ -54,9 +54,9 @@ Content-Type: application/json
 
 {
   "name": "Danny",
-  "email": "danny@test.com",
-  "password": "password1",
-  "password_confirmation": "password1"
+  "email": "daniel@test.com",
+  "password": "password",
+  "password_confirmation": "password"
 }
 ### Sessions create (login)
 POST http://localhost:3000/sessions
@@ -89,22 +89,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwODY1M
 GET http://localhost:3000/orders
 
 
-###carted_products create
-
+### Carted Products Create
 POST http://localhost:3000/carted_products
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
-
 {
-  "product_id":1,
-  "quantity":3,
-  "status":"carted",
-  "order_id":1
-}
+  "user_id": 1,
+  "product_id": 1, 
+  "quantity": 10, 
+  "order_id": 1, 
+  "status": "carted"
+} 
 
-###carted_products index
+### Carted Products Index
 GET http://localhost:3000/carted_products
-Authorization: Bearer {{jwt}}
-Content-Type: application/json
+Authorization: Bearer {{jwt}} 
 
+
+### Carted Products delete
+
+DELETE http://localhost:3000/carted_products/3
